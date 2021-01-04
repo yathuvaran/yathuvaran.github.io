@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Typewriter from 'typewriter-effect';
 import Scramble from 'react-scramble';
 
@@ -46,7 +47,7 @@ function HomePage() {
                 </div>
             </Container>
             <Container className='btn_cont'>
-                <Button href="/about" className='flow_btn' variant="outline-light">About Me</Button>
+                <Button as={Link} to="/about" className='flow_btn' variant="outline-light">About Me</Button>
             </Container>
         </div>
     );

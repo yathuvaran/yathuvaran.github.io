@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Container, Row, Button } from 'react-bootstrap';
 import Scramble from 'react-scramble';
+import { Link } from 'react-router-dom';
 import Experience from './Experience';
 
 class SkillsPage extends Component {
@@ -89,7 +90,7 @@ class SkillsPage extends Component {
                 </Container>
                 <Row className='about_row'>
                     <Col className='flow_btn_col'>
-                        <Button href="/projects" className='flow_btn flow_btn_skills_row' variant="outline-light">My Projects</Button>
+                        <Button as={Link} to="/projects" className='flow_btn flow_btn_skills_row' variant="outline-light">My Projects</Button>
                     </Col>
                 </Row>
             </div>

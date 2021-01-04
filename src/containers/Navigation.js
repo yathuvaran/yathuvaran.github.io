@@ -11,6 +11,7 @@ class Navigation extends Component {
         this.setState({ active: event.target.value });
     }
     render() {
+        console.log(window.location.hash)
         return (
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Navbar.Brand href="/">Welcome</Navbar.Brand>
@@ -18,9 +19,9 @@ class Navigation extends Component {
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto" defaultActiveKey={window.location.pathname}>
                         <Nav.Link as={Link} to="/" eventKey="/" >Home</Nav.Link>
-                        <Nav.Link as={Link} to="/about" eventKey="/about" >About</Nav.Link>
-                        <Nav.Link as={Link} to="/skills" eventKey="/skills" >Skills</Nav.Link>
-                        <Nav.Link as={Link} to="/projects" eventKey="/projects" >Projects</Nav.Link>
+                        <Nav.Link as={Link} to="/about" eventKey="#/about" >About</Nav.Link>
+                        <Nav.Link as={Link} to="/skills" eventKey="#/skills" >Skills</Nav.Link>
+                        <Nav.Link as={Link} to="/projects" eventKey="#/projects" >Projects</Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link className='font_awesome_link' target="_blank" active={false} href="assets/YathuvaranResume.pdf">
