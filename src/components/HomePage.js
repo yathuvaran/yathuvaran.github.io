@@ -5,9 +5,7 @@ import Typewriter from 'typewriter-effect';
 import Scramble from 'react-scramble';
 
 function HomePage() {
-    //<div className='screen_center2 scrambled'>
 
-    //</div>
     return (
         <div className='transparent_home'>
             <Container className='typewriter_cont'>
@@ -47,7 +45,7 @@ function HomePage() {
                 </div>
             </Container>
             <Container className='btn_cont'>
-                <Button as={Link} to="/about" className='flow_btn' variant="outline-light">About Me</Button>
+                <Button as={Link} to='/about' className='flow_btn' variant="outline-light">About Me</Button>
             </Container>
         </div>
     );
