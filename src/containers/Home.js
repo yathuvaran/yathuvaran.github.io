@@ -1,12 +1,10 @@
 import React from 'react';
-import NavBar from '../components/NavBar';
-import JumboTron from '../components/JumboTron';
-import HomeTest from '../components/HomeTest';
+import HomePage from '../components/HomePage';
 
 function Home() {
     return (
         <div>
-            <HomeTest></HomeTest>
+            <HomePage />
         </div>
     );
 }
