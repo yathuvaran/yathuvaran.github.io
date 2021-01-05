@@ -124,6 +124,8 @@ html, body {
 
 .transparent_home {
     background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    transform: translateY(45%);
 }
 
 .navbar-brand {
@@ -255,22 +257,3 @@ html, body {
     border-color: #d27409;
 }
 
-.outer {
-    display: table;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-  }
-  
-  .middle {
-    display: table-cell;
-    vertical-align: middle;
-  }
-  
-  .inner {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
