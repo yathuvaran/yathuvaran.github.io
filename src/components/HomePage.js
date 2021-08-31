@@ -52,14 +52,14 @@ class HomePage extends Component {
                                 preScramble={true}
                                 speed={'medium'}
                                 noBreakSpace={true}
-                                text="I'm a third year Software Engineering student at Carleton University"
+                                text="I'm a final year Software Engineering student at Carleton University"
                                 steps={[
                                     {
                                         action: '-',
                                         type: 'forward',
                                     },
                                 ]}
-                            /> : `I'm a third year Software Engineering student at Carleton University`}
+                            /> : `I'm a final year Software Engineering student at Carleton University`}
                     </div>
                 </Container>
                 <Container className='btn_cont'>
