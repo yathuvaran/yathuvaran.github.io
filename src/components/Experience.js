@@ -31,7 +31,7 @@ class Experience extends Component {
         place: "Carleton University",
         title: "Bachelor - Software Engineering",
         date: "Sept 2017 - Current",
-        desc: "I’m currently in my fourth year of the Software Engineering program at Carleton. It has provided me with comprehensive knowledge regarding fundamental computing theory and practice, processes, methods and tools for developing software systems, and regulatory and social issues. Emphasis is placed on developing expertise in object-oriented programming (using C++ and Java) and real-time computer systems.",
+        desc: "I’m currently in my final year of the Software Engineering program at Carleton. It has provided me with comprehensive knowledge regarding fundamental computing theory and practice, processes, methods and tools for developing software systems, and regulatory and social issues. Emphasis is placed on developing expertise in object-oriented programming (using C++ and Java) and real-time computer systems.",
       },
     ];
     var exp2 = [
@@ -51,7 +51,7 @@ class Experience extends Component {
         place: "Royal Bank of Canada",
         title: "Technical Systems Analyst",
         date: "Jan 2020 - April 2020",
-        desc: "My first Co-op term at RBC had me work under the Digital Accessibility (DA) and Enterprise Architecture (EA) teams. With the DA team, I designed, developed and refactored web apps (using HTML, CSS, and JavaScript) to conform with the RBC Digital Accessibility Guidelines. For the EA team I worked on developing their TechScape web application; designed to provide users with a visual representation of all the technologies used at RBC. Whilst developing Techscape, I learnt many new libraries and frameworks such as Spring, React, ElasticSearch and Bootstrap to name a few.",
+        desc: "My first Co-op term at RBC had me work with the Digital Accessibility (DA) and Enterprise Architecture (EA) teams. With the DA team, I designed, developed and refactored web apps (using HTML, CSS, and JavaScript) to conform with the RBC Digital Accessibility Guidelines. For the EA team I worked on developing their TechScape web application; designed to provide users with a visual representation of all the technologies used at RBC. Whilst developing Techscape, I learnt many new libraries and frameworks such as Spring, React, ElasticSearch and Bootstrap to name a few.",
       },
       {
         place: "Eaton Corporation",
