@@ -35,13 +35,14 @@ class SkillsPage extends Component {
     render() {
         var ratings1 = [
             { name: 'Java'},
-            { name: 'Javascript'},
+            { name: 'JavaScript'},
             { name: 'React'},
             { name: 'Python'},
-            { name: 'C'},
+            { name: 'C/C++'},
             { name: 'HTML'},
             { name: 'CSS'},
             { name: 'C#'},
+            { name: 'SQL'},
         ]
         var ratings2 = [
             { name: 'PHP'},
@@ -52,16 +53,18 @@ class SkillsPage extends Component {
             { name: 'Bootstrap Framework'},
             { name: 'Spring Boot'},
             { name: 'Hibernate'},
+            { name: 'Selenium'},
         ]
         var ratings3 = [
             { name: 'Scrum'},
             { name: 'SEO'},
             { name: 'SASS / SCSS'},
-            { name: 'Object Orientated Programming'},
-            { name: 'Functional Programming'},
+            { name: 'Google Cloud Platform'},
+            { name: 'Terraform'},
             { name: 'CI/CD'},
             { name: 'Jenkins'},
             { name: 'UX/UI Design'},
+            { name: 'Redux'},
         ]
         return (
             <div>
