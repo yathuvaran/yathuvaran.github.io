@@ -18,7 +18,9 @@ class Experience extends Component {
             <h5>{date}</h5>
           </Col>
           <Col className="light_text" md="8">
-            <p>{desc}</p>
+            {desc.map((txt) => (
+              <p>{txt}</p>
+            ))}
           </Col>
         </Row>
       </Container>
@@ -30,34 +32,56 @@ class Experience extends Component {
       {
         place: "Carleton University",
         title: "Bachelor - Software Engineering",
-        date: "Sept 2017 - Current",
-        desc: "I’m currently in my final year of the Software Engineering program at Carleton. It has provided me with comprehensive knowledge regarding fundamental computing theory and practice, processes, methods and tools for developing software systems, and regulatory and social issues. Emphasis is placed on developing expertise in object-oriented programming (using C++ and Java) and real-time computer systems.",
+        date: "Sept 2017 - April 2022",
+        desc: ["GPA: 3.4/4.0"],
       },
     ];
     var exp2 = [
       {
+        place: "IBM",
+        title: "Technical Consultant",
+        date: "May 2021 - Present",
+        desc: [
+          "Led the data migration effort from AX09 to Microsoft Dynamics 365 (D365) for a large International Manufacturing Client, including creating the data migration strategy and preforming the data load into D365",
+          "Managed the the development, testing, and successful integration of several modules into D365, ensuring alignment with client requirements through close collaboration with cross-functional teams",
+          "Led testing efforts as Test Lead, creating test cases in Azure DevOps, training clients on testing procedures, and performing rigorous Unit and System Integration Testing (SIT)",
+          "Developed and executed a comprehensive performance testing plan for BMO's advanced AI fraud detection software. Collaborating with IBM and BMO teams to optimize system performance through fine-tuning configuration settings, achieving a 45\% increase in processing efficiency",
+          "Oversaw IBM's role in the BMO Fraud Modernization Program by leading scrum meetings, tracking progress, and designing and presenting system enhancements incorporating advanced AI capabilities to executives",
+          "Led support efforts by managing IBM and BMO technical teams for system configuration and defect resolution, especially during production cutovers, ensuring smooth operation and successful transitions to live environments"
+        ],
+      },
+      {
         place: "Nokia",
         title: "IT Developer",
         date: "May 2021 - August 2021",
-        desc: "For my last Co-op term, I worked at Nokia as an IT Developer with the Cloud Networking team. I developed multiple scripts to automate the manual verification of network firewall and load balancer configuration settings. Whilst developing these scripts, I was greatly exposed to the Google Cloud Platform, utilizing the Google Cloud Client Libraries for Python in many of my scripts. I was also able to apply my concurrent programming skills, by developing multithreaded scripts. Additionally, I gained experience in using tools such as Terraform, and using various Python packages such as pandas, NumPy, and Tkinter to name a few.",
+        desc: [
+          "Automated the verification of network firewall and load balancer configurations using Google Cloud Client Libraries for Python, saving the cloud networking team 2 hours daily",
+          "Created a multithreaded Python program to monitor latency and packet loss by verifying interconnectivity between multiple network firewall VMs across various regions",
+          "Enhanced efficiency of network firewall change deployments by creating a script to filter and merge duplicate change requests before application via Terraform, resulting in a 95% improvement in deployment process efficiency",
+          "Developed an application using Python (utilizing pandas, NumPy, and Tkinter) to map Nokia’s server IP addresses to subnetworks across different locations, reducing data generation time from over 8 hours to 3 minutes"
+        ],
       },
       {
         place: "Royal Bank of Canada",
         title: "Full Stack Developer",
-        date: "May 2020 - October 2020",
-        desc: "After my first Co-op term ended, I had gotten my work term extended with the EA team to work exclusively on TechScape. During this term I was able to strengthen the new skills I had learnt in my previous term. I had also gained experience in full stack development by developing client and server software for the TechScape application. For example, I have used React and Bootstrap for frontend dev, and Spring, JPA, and Hibernate for backend dev. Additionally I gained experience with RESTful Web Services and modeling entity-relationships to design database structures with Liquibase.",
-      },
-      {
-        place: "Royal Bank of Canada",
-        title: "Technical Systems Analyst",
-        date: "Jan 2020 - April 2020",
-        desc: "My first Co-op term at RBC had me work with the Digital Accessibility (DA) and Enterprise Architecture (EA) teams. With the DA team, I designed, developed and refactored web apps (using HTML, CSS, and JavaScript) to conform with the RBC Digital Accessibility Guidelines. For the EA team I worked on developing their TechScape web application; designed to provide users with a visual representation of all the technologies used at RBC. Whilst developing Techscape, I learnt many new libraries and frameworks such as Spring, React, ElasticSearch and Bootstrap to name a few.",
+        date: "January 2020 - October 2020",
+        desc: [
+          "Developed the TechScape web application using Java Spring Boot, JPA, Hibernate, and RESTful web services, enhancing development efficiency across RBC by 35%",
+          "Designed and implemented intuitive, responsive user interfaces with React, Redux, and Bootstrap, ensuring alignment with RBC design standards",
+          "Implemented Elasticsearch for enhanced search functionality in TechScape, increasing user engagement by 40%",
+          "Created and maintained RESTful API architecture with Spring MVC, Spring IOC, and Spring Transactions for seamless integration and functionality",
+          "Developed and maintained automated test cases using Selenium WebDriver (JUnit) for functional and regression testing, improving code quality and reducing bugs by 25%"
+        ],
       },
       {
         place: "Eaton Corporation",
         title: "Marketing Intern",
         date: "May 2019 - August 2019",
-        desc: "My first internship at Eaton as a marketing intern taught me how to make prioritization decisions based on the business value of a project. Which I find allows me to make economic decisions throughout the software development lifecycle. Eaton is a multinational power management company, with two business sectors; Electrical and Industrial.",
+        desc: [
+          "Created interactive dashboards with Microsoft Power BI to visualize key trends and goals, aiding in improved operations and profit planning",
+          "Programmed VBA algorithms to maintain and support pricing systems in Microsoft Excel, improving pricing accuracy and efficiency",
+          "Created digital marketing content and sales materials using Adobe software, enhancing communication effectiveness"
+        ],
       },
     ];
     return (
