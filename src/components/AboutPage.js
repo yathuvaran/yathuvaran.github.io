@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Col, Row, Button } from "react-bootstrap";
 import Scramble from "react-scramble";
 import { Link } from "react-router-dom";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadSlim } from "@tsparticles/slim";
 
 class AboutPage extends Component {
   render() {
