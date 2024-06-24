@@ -16,7 +16,7 @@ class Navigation extends Component {
                     <Nav className="mr-auto">
                         <Nav.Link as={NavLink} exact to="/">Home</Nav.Link>
                         <Nav.Link as={NavLink} exact to="/about">About</Nav.Link>
-                        <Nav.Link as={NavLink} exact to="/skills">Skills</Nav.Link>
+                        <Nav.Link as={NavLink} exact to="/experience">Experience</Nav.Link>
                         <Nav.Link as={NavLink} exact to="/projects">Projects</Nav.Link>
                     </Nav>
                     <Nav>

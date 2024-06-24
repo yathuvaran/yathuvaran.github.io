@@ -2,45 +2,11 @@ import React, { Component } from "react";
 import { Col, Row, Button } from "react-bootstrap";
 import Scramble from "react-scramble";
 import { Link } from "react-router-dom";
-import Particles from "react-particles-js";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadSlim } from "@tsparticles/slim";
 
 class AboutPage extends Component {
-  constructor(props) {
-    super(props);
-    this.state = { isDesktop: false };
-    this.updatePredicate = this.updatePredicate.bind(this);
-  }
-  componentDidMount() {
-    this.updatePredicate();
-    window.addEventListener("resize", this.updatePredicate);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.updatePredicate);
-  }
-
-  updatePredicate() {
-    this.setState({ isDesktop: window.innerWidth > 992 });
-  }
   render() {
-    var particlesOptions = {
-      particles: {
-        color: {
-          value: "#d27409",
-        },
-        line_linked: {
-          color: "#d27409",
-        },
-      },
-      interactivity: {
-        events: {
-          onhover: {
-            enable: true,
-            mode: "repulse",
-          },
-        },
-      },
-    };
     return (
       <div>
         <Row className="about_row">
@@ -90,18 +56,13 @@ class AboutPage extends Component {
             </p>
             <Button
               as={Link}
-              to="/skills"
+              to="/experience"
               className="flow_btn flow_btn_about_row"
               variant="outline-light"
             >
-              My Skills
+              My Experience
             </Button>
           </Col>
-          {this.state.isDesktop && (
-            <Col className="particles_col">
-              <Particles params={particlesOptions} />
-            </Col>
-          )}
         </Row>
       </div>
     );

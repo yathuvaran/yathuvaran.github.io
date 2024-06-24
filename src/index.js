@@ -20,7 +20,7 @@ ReactDOM.render(
       <Route path="/projects">
         <Projects />
       </Route>
-      <Route path="/skills">
+      <Route path="/experience">
         <Skills />
       </Route>
       <Route path="/">
