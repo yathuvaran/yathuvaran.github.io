@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Col, Row } from "react-bootstrap";
-import Scramble from "react-scramble";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
@@ -60,23 +59,7 @@ class ProjectsPage extends Component {
       <div>
         <Row className="about_row">
           <Col>
-            <div className="about_scrambled">
-              <Scramble
-                autoStart
-                text="Projects"
-                steps={[
-                  {
-                    roll: 10,
-                    action: "+",
-                    type: "all",
-                  },
-                  {
-                    action: "-",
-                    type: "forward",
-                  },
-                ]}
-              />
-            </div>
+            <div className="about_scrambled">Projects</div>
           </Col>
         </Row>
         <Row className="about_row">

@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Col, Row, Button } from "react-bootstrap";
-import Scramble from "react-scramble";
 import { Link } from "react-router-dom";
 
 class AboutPage extends Component {
@@ -9,23 +8,7 @@ class AboutPage extends Component {
       <div>
         <Row className="about_row">
           <Col>
-            <div className="about_scrambled">
-              <Scramble
-                autoStart
-                text="About Me"
-                steps={[
-                  {
-                    roll: 10,
-                    action: "+",
-                    type: "all",
-                  },
-                  {
-                    action: "-",
-                    type: "forward",
-                  },
-                ]}
-              />
-            </div>
+            <div className="about_scrambled">About Me</div>
           </Col>
         </Row>
         <Row className="about_row">
